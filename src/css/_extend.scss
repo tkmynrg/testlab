@@ -1,0 +1,60 @@
+@import "variables";
+
+.headline-1 {
+  font-family: $fontBold;
+  font-size: 52px;
+  line-height: 64px;
+  font-weight: 600;
+  color: $colorBlack;
+  text-align: center;
+  margin: $indent17 0;
+
+  @include mobile {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.headline-2 {
+    @extend .headline-1;
+    font-size: 44px;
+    line-height: 59px;
+  
+    @include desktop-smaller {
+      font-size: 32px;
+      line-height: 43px;
+    }
+  
+    @include mobile {
+      font-size: 26px;
+      line-height: 34px;
+    }
+  }
+
+  .headline-3 {
+    @extend .headline-1;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .headline-4 {
+    @extend .headline-1;
+    font-size: 26px;
+    line-height: 35px;
+  }
+  
+  .headline-5 {
+    @extend .headline-1;
+    font-size: 22px;
+    line-height: 29px;
+  }
+  
+  .headline-6 {
+    @extend .headline-1;
+    font-size: 16px;
+    line-height: 24px;
+  }

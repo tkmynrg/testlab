@@ -1,0 +1,111 @@
+.how-work-block {
+    margin-top: 65px;
+
+    .item {
+        margin-bottom: 32px;
+
+        .icon {
+            
+            img {
+                max-width: 71px;
+                max-height: 65px;
+            }
+        }
+
+        .mobile-wrap {
+            margin-top: 15px;
+            .heading {
+                @extend .headline-6;
+                text-align: left;
+                margin-bottom: 4px;
+            }
+
+            .description {
+                font-size: 14px;
+                line-height: 24px;
+                color: $colorDarkGray;
+                max-width: 280px;
+            }
+
+            @include only-mobile {
+                margin-left: 16px;
+            }
+        }
+
+        @include only-mobile {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.how-work-second-block {
+    display: flex;
+    align-items: center;
+
+    @include only-mobile {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .text-block {
+
+        width: 50%;
+
+        @include only-mobile {
+            width: 100%;
+        }
+
+        .heading {
+            @extend .headline-3;
+            text-align: left;
+            margin-bottom: 15px;
+
+            @include mobile {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            @include only-mobile {
+                text-align: center;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 28px;  
+            color: $colorDarkGray;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .image-block {
+        width: 50%;
+
+        @include only-mobile {
+            width: 90%;
+            margin-bottom: 20px;
+        }
+
+        .photo {
+            background-image: url(../img/fura.png);
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &:before {
+                content: "";
+                display: block;
+                padding-top: 75.6%;
+            }
+        }
+
+        
+    }
+}

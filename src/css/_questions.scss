@@ -1,0 +1,79 @@
+.questions-block {
+
+    .question-toggle-block {
+        display: block;
+        padding: 0;
+        transition: all .2s ease;
+        border-top: 1px solid $colorExtraLightGray;
+
+        &.open {
+            .toggle-content {
+                display: block;
+            }
+
+            .toggle-caption {
+                &:after{
+                    transform: rotate(45deg) translate(-37%,-37%)!important;
+                    background-image: url(../img/plus-blue.svg)!important;
+                }
+            }
+            .toggle-button {
+                color: $colorLink;
+            }
+        }
+
+        .toggle-button {
+            cursor: pointer;
+            display: block;
+            margin: 0;
+            padding: 0;
+
+            &:hover {
+                color: $colorLink;
+            }
+
+            .toggle-caption {
+                display: block;
+                margin: 0;
+                padding: 24px 50px 24px 0px;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    background-image: url(../img/plus.svg);
+                    display: block;
+                    height: 24px;
+                    margin: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 24px;
+                    z-index: 1;
+                }
+
+                &:hover:after {
+                    background-image: url(../img/plus-blue.svg);
+                }
+
+                .name {
+                    font-family: $fontBold;
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+
+            }
+        }
+
+        .toggle-content {
+            display: none;
+            margin: 0;
+            padding: 0px 50px 0px 0px;
+            position: relative;
+            font-size: 18px;
+            line-height: 32px;
+            font-family: $fontBase;
+            color: $colorDarkGray;
+        }
+    }
+}

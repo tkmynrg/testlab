@@ -1,0 +1,43 @@
+.comments {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+
+    @include only-mobile {
+        margin-top: -40px;
+    }
+
+    .item {
+        margin-bottom: 37px;
+        padding: 0 16px;
+        flex: 0 1 50%;
+
+        @include mobile {
+            flex: 0 1 100%;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 18px;
+            line-height: 32px;
+            font-family: $fontBold;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 28px;
+            font-family: $fontBase;
+            margin-top: 17px;
+
+            @include only-mobile {
+                margin-top: 45px;
+            }
+
+            @include xs-mobile {
+                margin-top: 14px;
+            }
+        }
+    }
+}
