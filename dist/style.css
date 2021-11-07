@@ -1101,9 +1101,8 @@ p {
             border-color: #C2C8CD !important;
             background: #FFFFFF; }
           .form #feedback_form .form-block .input-block .field:hover {
-            background: #FFFFFF; }
-            .form #feedback_form .form-block .input-block .field:hover .placeholder {
-              border-color: #C2C8CD; }
+            background: #FFFFFF;
+            border-color: #C2C8CD; }
             .form #feedback_form .form-block .input-block .field:hover .label {
               color: #C2C8CD !important; }
           .form #feedback_form .form-block .input-block .field.empty .label {
