@@ -30,7 +30,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: "style.css"
+            filename: "./css/style.css"
         }),
         new CopyWebpackPlugin({
             patterns: [
